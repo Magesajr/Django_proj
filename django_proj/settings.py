@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-import os 
+import os
+
+import django_heroku 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -155,3 +157,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sam263708@gmail.com'
 
 EMAIL_HOST_PASSWORD = 'hkqqjvkozwkqeymt'
+
+django_heroku.settings(locals())
