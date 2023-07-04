@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 
-import django_heroku 
+import django_heroku
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,7 +31,7 @@ DEBUG = True
 DEBUG_VALUE = "True"
 
 
-ALLOWED_HOSTS = ['y4casite-c35b7060e52d.herokuapp.com']
+ALLOWED_HOSTS = ['https://y4casite-c35b7060e52d.herokuapp.com']
 
 
 # Application definition
